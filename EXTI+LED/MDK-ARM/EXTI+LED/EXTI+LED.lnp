@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"exti+led\startup_stm32f103xb.o"
+"exti+led\main.o"
+"exti+led\stm32f1xx_it.o"
+"exti+led\stm32f1xx_hal_msp.o"
+"exti+led\stm32f1xx_hal_gpio_ex.o"
+"exti+led\stm32f1xx_hal_tim.o"
+"exti+led\stm32f1xx_hal_tim_ex.o"
+"exti+led\stm32f1xx_hal.o"
+"exti+led\stm32f1xx_hal_rcc.o"
+"exti+led\stm32f1xx_hal_rcc_ex.o"
+"exti+led\stm32f1xx_hal_gpio.o"
+"exti+led\stm32f1xx_hal_dma.o"
+"exti+led\stm32f1xx_hal_cortex.o"
+"exti+led\stm32f1xx_hal_pwr.o"
+"exti+led\stm32f1xx_hal_flash.o"
+"exti+led\stm32f1xx_hal_flash_ex.o"
+"exti+led\stm32f1xx_hal_exti.o"
+"exti+led\system_stm32f1xx.o"
+--strict --scatter "EXTI+LED\EXTI+LED.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "EXTI+LED.map" -o EXTI+LED\EXTI+LED.axf
